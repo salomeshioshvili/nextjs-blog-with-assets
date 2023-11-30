@@ -5,5 +5,5 @@ export default function Home() {
     <main className={styles.main}>
     ეს არის მთავარი გვერდი
     </main>
-  )
+  );
 }
