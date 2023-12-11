@@ -29,12 +29,3 @@
     font-weight: 300;
 }
 
-.button {
-    padding: 20px;
-    cursor: pointer;
-    background-color: #53c2Bb;
-    border: none;
-    border-radius: 5px;
-    width: fit-content;
-    color: white;
-}
