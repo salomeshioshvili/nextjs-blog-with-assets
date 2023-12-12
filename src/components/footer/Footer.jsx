@@ -5,7 +5,7 @@ import Image from 'next/image'
 function Footer() {
     return (
         <div className={styles.container}>
-          <span>@2023 Lamamia. All rights reserved</span>
+          <span>@all rights reserved</span>
           <div className={styles.socialNetworks}>
             <a href="https://www.facebook.com/">
             <Image src="/1.png" width={20} className={styles.icon} height={20} alt="facebook"/>
