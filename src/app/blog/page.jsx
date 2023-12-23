@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getData = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {cache: "force-cache"});
+  const res = await fetch("https://api.escuelajs.co/api/v1/products", {cache: "force-cache"});
 
   if (!res.ok) {
     throw new Error("There is no data");
@@ -22,7 +22,7 @@ async function Blog() {
         <Link href={`/blog/${singleBlog.id}`} className={styles.container}>
           <div className={styles.imageContainer}>
             <Image
-              src="https://images.pexels.com/photos/19329504/pexels-photo-19329504/free-photo-of-black-and-white-photo-of-a-mountain-in-the-distance.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src={singleBlog.images[0]}
               alt="Blog Image"
               width={400}
               height={200}
@@ -31,7 +31,7 @@ async function Blog() {
           </div>
           <div className={styles.content}>
             <h1 className={styles.title}>{singleBlog.title}</h1>
-            <p className={styles.desc}>{singleBlog.body}</p>
+            <p className={styles.desc}>{singleBlog.description}</p>
           </div>
         </Link>
       ))}
@@ -40,3 +40,8 @@ async function Blog() {
 }
 
 export default Blog;
+
+
+
+
+
