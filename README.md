@@ -8,5 +8,4 @@
    
 ## Additional Use
   This repository also serves as a media host for my other HTML projects. 
-  Images are stored in `/public/images/` and can be accessed via:
-  `https://your-deployed-url.vercel.app/images/filename.jpg`
+  Images are stored in `/public/images/` and can be accessed via.
